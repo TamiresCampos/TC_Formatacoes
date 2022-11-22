@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>T.C. Formatações</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+		<section class="cabecalho">
+			<h1><img src="logo-azul.png" alt="logo da T.C Formatações"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#investimento-precos">Preços</a></li>
+					<li><a href="contato.html">Contatos</a></li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<main>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		<form>
+			<fieldset class="dados-cliente">
+				<legend>Entre em contato para agendar um serviço ou para mais informações</legend>
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" required placeholder="email@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" placeholder="xx xxxxxxxxx">
+			</fieldset>
+			
+			<fieldset class="demanda-prazo">
+				<legend class="demanda-prazo-legenda1">Qual a sua demanda?
+					<select>
+					<option>Agendar Serviço</option>
+					<option>Tirar Dúvidas</option>
+					</select>
+				</legend>
+			
+				<legend class="demanda-prazo-legenda2">Qual o prazo para entregarmos o seu trabalho?
+					<select>
+					<option>Padrão</option>
+					<option>Imediato</option>
+					</select>
+				</legend>
+				
+			</fieldset>
+			
+			<fieldset class="opcao-servico">
+				<legend>Qual o serviço desejado?
+					<label for="formatacao"><input type="radio" id="formatacao" name="servico">Formatação</label>
+					
+					<label for="revisao"><input type="radio" id="revisao" name="servico">Revisão</label>
+					
+					<label for="formatacao+revisao"><input type="radio" id="formatacao+revisao" name="servico">Formatação + Revisão</label>
+				</legend>
+			</fieldset>
+			
+			<fieldset class="opcao-upload">
+				<label for="upload">Selecione seus arquivos para enviar:</label>
+				<input type="file" id="upload" multiple="multiple">
+			</fieldset>
+
+			<fieldset class="caixa-mensagem">
+				<label for="mensagem">Fale com a gente:</label>
+				<textarea cols="70" rows="10" id="mensagem" placeholder="Deixe uma mensagem (opcional)"></textarea>
+			</fieldset>
+
+			<label for="whats"><input type="checkbox" id="whats" checked>Gostaria de ser contatada(o) por WhatsApp?</label>
+			
+			
+			<input type="submit" class="botao-enviar">
+
+		</form>
+	</main>
+	<footer>
+		<img src="logo-branco.png" alt="logo da T.C Formatações">
+		<p class="copyright">Copyright 2022</p>
+	</footer>
+</body>
+</html>
